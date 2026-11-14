@@ -1,0 +1,878 @@
+[
+  {
+    "id": "booyah-black",
+    "side": "back",
+    "source": "9683b276_IMG_1823.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "booyah-black",
+    "side": "front",
+    "source": "9683b276_IMG_1823.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "booyah-purple",
+    "side": "back",
+    "source": "fd51f428_IMG_1822.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "booyah-purple",
+    "side": "front",
+    "source": "fd51f428_IMG_1822.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mongkol-black",
+    "side": "front",
+    "source": "b31a14d8_IMG_1792.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mongkol-black",
+    "side": "back",
+    "source": "b31a14d8_IMG_1792.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mongkol-pink",
+    "side": "front",
+    "source": "b31a14d8_IMG_1792.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mongkol-pink",
+    "side": "back",
+    "source": "b31a14d8_IMG_1792.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mongkol-cyan",
+    "side": "front",
+    "source": "b31a14d8_IMG_1792.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mongkol-cyan",
+    "side": "back",
+    "source": "b31a14d8_IMG_1792.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cg-black",
+    "side": "front",
+    "source": "72d35118_IMG_1691.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cg-black",
+    "side": "back",
+    "source": "72d35118_IMG_1691.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cg-cyan",
+    "side": "front",
+    "source": "643677fa_IMG_1690.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cg-cyan",
+    "side": "back",
+    "source": "643677fa_IMG_1690.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "vk-pink",
+    "side": "front",
+    "source": "0fded98a_IMG_1307.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "vk-pink",
+    "side": "back",
+    "source": "0fded98a_IMG_1307.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "vk-gold",
+    "side": "front",
+    "source": "b2baee90_IMG_1304.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "vk-gold",
+    "side": "back",
+    "source": "b2baee90_IMG_1304.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-blue",
+    "side": "front",
+    "source": "11e78333_IMG_0996.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-blue",
+    "side": "back",
+    "source": "11e78333_IMG_0996.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "family-pink",
+    "side": "front",
+    "source": "5c64f3c4_IMG_1245.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "family-pink",
+    "side": "back",
+    "source": "5c64f3c4_IMG_1245.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-purple",
+    "side": "front",
+    "source": "8cb142da_IMG_1091.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-purple",
+    "side": "back",
+    "source": "8cb142da_IMG_1091.jpeg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "hak-coca-polo",
+    "side": "front",
+    "source": "HAK COCA FAMILY POSTER 1.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "hak-coca-polo",
+    "side": "back",
+    "source": "HAK COCA FAMILY POSTER 1.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "hak-coca-crew",
+    "side": "front",
+    "source": "HAK COCA FAMILY POSTER 2.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "hak-coca-crew",
+    "side": "back",
+    "source": "HAK COCA FAMILY POSTER 2.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "steav-cyan",
+    "side": "front",
+    "source": "1.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "steav-cyan",
+    "side": "back",
+    "source": "1.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "teas-toch-red",
+    "side": "front",
+    "source": "poster music teas toch.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "teas-toch-red",
+    "side": "back",
+    "source": "poster music teas toch.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-red",
+    "side": "front",
+    "source": "Poster3 (6).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-red",
+    "side": "back",
+    "source": "Poster3 (6).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-silver",
+    "side": "front",
+    "source": "Poster4.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-silver",
+    "side": "back",
+    "source": "Poster4.jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mnustochtoch-pink",
+    "side": "front",
+    "source": "Poster1 (9).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mnustochtoch-pink",
+    "side": "back",
+    "source": "Poster1 (9).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mnustochtoch-amber",
+    "side": "front",
+    "source": "Poster2 (10).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mnustochtoch-amber",
+    "side": "back",
+    "source": "Poster2 (10).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mere-navy",
+    "side": "front",
+    "source": "Artboard 1 (29).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "mere-navy",
+    "side": "back",
+    "source": "Artboard 3 (26).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-orchid",
+    "side": "front",
+    "source": "Artboard 5 (12).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-orchid",
+    "side": "back",
+    "source": "Artboard 6 (12).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-black",
+    "side": "front",
+    "source": "Artboard 7 (7).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "jenh-black",
+    "side": "back",
+    "source": "Artboard 8 (6).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "ysk-multicolor",
+    "side": "front",
+    "source": "IMG_9809.JPG",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "ysk-multicolor",
+    "side": "back",
+    "source": "IMG_9811.JPG",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "karemhey-multicolor",
+    "side": "front",
+    "source": "Artboard 1 (19).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "karemhey-multicolor",
+    "side": "back",
+    "source": "Artboard 3 (16).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "zerm-red-polo",
+    "side": "front",
+    "source": "Artboard 5 (8).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "zerm-red-polo",
+    "side": "back",
+    "source": "Artboard 7 (4).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "homeyoun-pink",
+    "side": "front",
+    "source": "Artboard 1 (21).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "homeyoun-pink",
+    "side": "back",
+    "source": "Artboard 3 (18).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "zerm-skull",
+    "side": "front",
+    "source": "Artboard 1 (24).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "zerm-skull",
+    "side": "back",
+    "source": "Artboard 3 (21).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-kong-black",
+    "side": "front",
+    "source": "Artboard 1 (25).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-kong-black",
+    "side": "back",
+    "source": "Artboard 2 (23).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "naga-green",
+    "side": "front",
+    "source": "Artboard 1 (26).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "naga-green",
+    "side": "back",
+    "source": "Artboard 2 (24).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "bendam-black-polo",
+    "side": "front",
+    "source": "Artboard 1 (23).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "bendam-black-polo",
+    "side": "back",
+    "source": "Artboard 3 (20).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "bendam-red-polo",
+    "side": "front",
+    "source": "Artboard 5 (10).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "bendam-red-polo",
+    "side": "back",
+    "source": "Artboard 7 (6).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "kow-red",
+    "side": "front",
+    "source": "Artboard 1 (18).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "kow-red",
+    "side": "back",
+    "source": "Artboard 2 (16).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "kow-cyan",
+    "side": "front",
+    "source": "Artboard 3 (15).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "kow-cyan",
+    "side": "back",
+    "source": "Artboard 4 (15).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "kow-black",
+    "side": "front",
+    "source": "Artboard 5 (7).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "kow-black",
+    "side": "back",
+    "source": "Artboard 6 (7).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "shanghai-cyan",
+    "side": "front",
+    "source": "Artboard 1 (17).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "shanghai-cyan",
+    "side": "back",
+    "source": "Artboard 2 (15).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "shanghai-black",
+    "side": "front",
+    "source": "Artboard 3 (14).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "shanghai-black",
+    "side": "back",
+    "source": "Artboard 4 (14).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "qr-original-gold",
+    "side": "front",
+    "source": "Untitled-1 (2).jpg",
+    "size": [
+      1200,
+      1440
+    ],
+    "crop": [
+      0,
+      0,
+      2271,
+      3000
+    ]
+  },
+  {
+    "id": "qr-original-gold",
+    "side": "back",
+    "source": "Untitled-1 (2).jpg",
+    "size": [
+      1200,
+      1440
+    ],
+    "crop": [
+      2271,
+      0,
+      4543,
+      3000
+    ]
+  },
+  {
+    "id": "cafe-spean-black-polo",
+    "side": "front",
+    "source": "Artboard 3 (12).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-spean-black-polo",
+    "side": "back",
+    "source": "Artboard 4 (12).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-spean-red-polo",
+    "side": "front",
+    "source": "Artboard 1 (14).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-spean-red-polo",
+    "side": "back",
+    "source": "Artboard 2 (12).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-spean-ninja-black",
+    "side": "front",
+    "source": "Artboard 1 (15).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-spean-ninja-black",
+    "side": "back",
+    "source": "Artboard 2 (13).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-spean-ninja-gold",
+    "side": "front",
+    "source": "Artboard 3 (13).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "cafe-spean-ninja-gold",
+    "side": "back",
+    "source": "Artboard 4 (13).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "g9-black",
+    "side": "front",
+    "source": "Artboard 1 (12).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "g9-black",
+    "side": "back",
+    "source": "Artboard 2 (10).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "g9-red",
+    "side": "front",
+    "source": "Artboard 3 (10).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "g9-red",
+    "side": "back",
+    "source": "Artboard 4 (10).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "g9-pink",
+    "side": "front",
+    "source": "Artboard 1 (7).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "g9-pink",
+    "side": "back",
+    "source": "Artboard 3 (7).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "leohos-pink",
+    "side": "front",
+    "source": "07e1fb2b_Artboard 1 (11).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "leohos-pink",
+    "side": "back",
+    "source": "01d9e2ea_Artboard 2 (9).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "leohos-black",
+    "side": "front",
+    "source": "22196346_Artboard 3 (9).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "leohos-black",
+    "side": "back",
+    "source": "b056fb5e_Artboard 4 (9).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "leohos-red",
+    "side": "front",
+    "source": "b6a9011c_Poster2 (3).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  },
+  {
+    "id": "leohos-red",
+    "side": "back",
+    "source": "b6a9011c_Poster2 (3).jpg",
+    "size": [
+      1200,
+      1440
+    ]
+  }
+]
