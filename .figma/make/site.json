@@ -1,8 +1,11 @@
 {
-  "title": "IFONG",
-  "description": "Original designs. T-shirts made for you.",
+  "title": "IFONG - ហាងលក់អាវយឺត Original Design | T-Shirt Brand Cambodia",
+  "description": "ទិញអាវយឺត IFONG Original Design គុណភាពខ្ពស់ សាច់ក្រណាត់ត្រជាក់ស្រួលពាក់ ម៉ូដទាន់សម័យ និងកម្ម៉ង់បានរហ័សតាម Telegram។ សេវាដឹកជញ្ជូនទូទាំងប្រទេសកម្ពុជា។",
   "icons": {
     "icon": "/images/brand/yak-logo.png"
+  },
+  "openGraph": {
+    "image": "/images/editorial.jpg"
   },
   "robots": {
     "index": true
