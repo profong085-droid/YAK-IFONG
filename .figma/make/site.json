@@ -5,7 +5,7 @@
     "icon": "/images/brand/yak-logo.png"
   },
   "openGraph": {
-    "image": "/images/editorial.jpg"
+    "image": "/images/brand/yak-logo.png"
   },
   "robots": {
     "index": true
