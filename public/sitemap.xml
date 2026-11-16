@@ -1,9 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.ifong-yak.shop/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/editorial.jpg</image:loc>
+      <image:title>IFONG Original Design T-Shirts</image:title>
+      <image:caption>IFONG Streetwear and Jersey Collection Cambodia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/leohos-pink-front.webp</image:loc>
+      <image:title>The Family Leohos Polo - Orchid Pink</image:title>
+      <image:caption>IFONG The Family Leohos Polo (Orchid Pink)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/leohos-black-front.webp</image:loc>
+      <image:title>The Family Leohos Polo - Black / Charcoal</image:title>
+      <image:caption>IFONG The Family Leohos Polo (Black / Charcoal)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/leohos-red-front.webp</image:loc>
+      <image:title>The Family Leohos Polo - Crimson Red</image:title>
+      <image:caption>IFONG The Family Leohos Polo (Crimson Red)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cafe-spean-ninja-black-front.webp</image:loc>
+      <image:title>Cafe Spean Music Jersey - Ninja Black</image:title>
+      <image:caption>IFONG Cafe Spean Music Jersey (Ninja Black)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cafe-spean-ninja-gold-front.webp</image:loc>
+      <image:title>Cafe Spean Music Jersey - Ninja Gold</image:title>
+      <image:caption>IFONG Cafe Spean Music Jersey (Ninja Gold)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/g9-black-front.webp</image:loc>
+      <image:title>Family G9 Dai Sloy Jersey - Charcoal / Silver</image:title>
+      <image:caption>IFONG Family G9 Dai Sloy Jersey (Charcoal / Silver)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/g9-red-front.webp</image:loc>
+      <image:title>Family G9 Dai Sloy Jersey - Scarlet Red</image:title>
+      <image:caption>IFONG Family G9 Dai Sloy Jersey (Scarlet Red)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/g9-pink-front.webp</image:loc>
+      <image:title>Family G9 Dai Sloy Jersey - Orchid Pink</image:title>
+      <image:caption>IFONG Family G9 Dai Sloy Jersey (Orchid Pink)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/shanghai-cyan-front.webp</image:loc>
+      <image:title>Shanghai x Roty Jersey - Samurai Cyan</image:title>
+      <image:caption>IFONG Shanghai x Roty Jersey (Samurai Cyan)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/shanghai-black-front.webp</image:loc>
+      <image:title>Shanghai x Roty Jersey - Samurai Black</image:title>
+      <image:caption>IFONG Shanghai x Roty Jersey (Samurai Black)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/qr-original-gold-front.webp</image:loc>
+      <image:title>Team QR Original Jersey - Bronze / Gold</image:title>
+      <image:caption>IFONG Team QR Original Jersey (Bronze / Gold)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cafe-spean-black-polo-front.webp</image:loc>
+      <image:title>Cafe Spean Music Polo - Black / Smoke</image:title>
+      <image:caption>IFONG Cafe Spean Music Polo (Black / Smoke)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cafe-spean-red-polo-front.webp</image:loc>
+      <image:title>Cafe Spean Music Polo - Festival Red</image:title>
+      <image:caption>IFONG Cafe Spean Music Polo (Festival Red)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/bendam-black-polo-front.webp</image:loc>
+      <image:title>The Bendam Music Polo - Black / Gold</image:title>
+      <image:caption>IFONG The Bendam Music Polo (Black / Gold)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/bendam-red-polo-front.webp</image:loc>
+      <image:title>The Bendam Music Polo - Samurai Red</image:title>
+      <image:caption>IFONG The Bendam Music Polo (Samurai Red)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/kow-red-front.webp</image:loc>
+      <image:title>KOW King of the War Jersey - Crimson / Rose</image:title>
+      <image:caption>IFONG KOW King of the War Jersey (Crimson / Rose)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/kow-cyan-front.webp</image:loc>
+      <image:title>KOW King of the War Jersey - Sky Cyan</image:title>
+      <image:caption>IFONG KOW King of the War Jersey (Sky Cyan)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/kow-black-front.webp</image:loc>
+      <image:title>KOW King of the War Jersey - Ink / Silver</image:title>
+      <image:caption>IFONG KOW King of the War Jersey (Ink / Silver)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/zerm-red-polo-front.webp</image:loc>
+      <image:title>Zerm Copy Team Polo - Dragon Red</image:title>
+      <image:caption>IFONG Zerm Copy Team Polo (Dragon Red)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/homeyoun-pink-front.webp</image:loc>
+      <image:title>The Homeyoun Team Jersey - Manga Pink</image:title>
+      <image:caption>IFONG The Homeyoun Team Jersey (Manga Pink)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/zerm-skull-front.webp</image:loc>
+      <image:title>Zerm Copy Team Jersey - Skull Charcoal</image:title>
+      <image:caption>IFONG Zerm Copy Team Jersey (Skull Charcoal)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cafe-kong-black-front.webp</image:loc>
+      <image:title>Cafe Kong Team Jersey - Temple Black</image:title>
+      <image:caption>IFONG Cafe Kong Team Jersey (Temple Black)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/naga-green-front.webp</image:loc>
+      <image:title>Naga V2 Jersey - Black / Naga Green</image:title>
+      <image:caption>IFONG Naga V2 Jersey (Black / Naga Green)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/mere-navy-front.webp</image:loc>
+      <image:title>Mere Custom Polo - Navy / Gold</image:title>
+      <image:caption>IFONG Mere Custom Polo (Navy / Gold)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/jenh-orchid-front.webp</image:loc>
+      <image:title>Jenh Jombang Jersey - Temple Orchid</image:title>
+      <image:caption>IFONG Jenh Jombang Jersey (Temple Orchid)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/jenh-black-front.webp</image:loc>
+      <image:title>Jenh Jombang Jersey - Temple Black</image:title>
+      <image:caption>IFONG Jenh Jombang Jersey (Temple Black)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/ysk-multicolor-front.webp</image:loc>
+      <image:title>YSK You Know Me Jersey - Arcade Multicolor</image:title>
+      <image:caption>IFONG YSK You Know Me Jersey (Arcade Multicolor)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/karemhey-multicolor-front.webp</image:loc>
+      <image:title>Team Karemhey Jersey - Ice Cream Multicolor</image:title>
+      <image:caption>IFONG Team Karemhey Jersey (Ice Cream Multicolor)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/hak-coca-polo-front.webp</image:loc>
+      <image:title>Hak Coca Family Polo - Dragon Blue / Polo</image:title>
+      <image:caption>IFONG Hak Coca Family Polo (Dragon Blue / Polo)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/hak-coca-crew-front.webp</image:loc>
+      <image:title>Hak Coca Family Jersey - Dragon Blue / Crew</image:title>
+      <image:caption>IFONG Hak Coca Family Jersey (Dragon Blue / Crew)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/steav-cyan-front.webp</image:loc>
+      <image:title>The Steav Online Jersey - Lion Cyan</image:title>
+      <image:caption>IFONG The Steav Online Jersey (Lion Cyan)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/teas-toch-red-front.webp</image:loc>
+      <image:title>Music Teas Toch Jersey - Crimson</image:title>
+      <image:caption>IFONG Music Teas Toch Jersey (Crimson)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/jenh-red-front.webp</image:loc>
+      <image:title>Jenh Jombang Jersey - Temple Red</image:title>
+      <image:caption>IFONG Jenh Jombang Jersey (Temple Red)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/jenh-silver-front.webp</image:loc>
+      <image:title>Jenh Jombang Jersey - Temple Silver</image:title>
+      <image:caption>IFONG Jenh Jombang Jersey (Temple Silver)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/mnustochtoch-pink-front.webp</image:loc>
+      <image:title>The Mnustochtoch Team Jersey - Blossom Pink</image:title>
+      <image:caption>IFONG The Mnustochtoch Team Jersey (Blossom Pink)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/mnustochtoch-amber-front.webp</image:loc>
+      <image:title>The Mnustochtoch Team Jersey - Dragon Amber</image:title>
+      <image:caption>IFONG The Mnustochtoch Team Jersey (Dragon Amber)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/booyah-black-front.webp</image:loc>
+      <image:title>The Family Booyah Jersey - Black / Gold</image:title>
+      <image:caption>IFONG The Family Booyah Jersey (Black / Gold)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/booyah-purple-front.webp</image:loc>
+      <image:title>The Family Booyah Jersey - Royal Purple</image:title>
+      <image:caption>IFONG The Family Booyah Jersey (Royal Purple)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cafe-blue-front.webp</image:loc>
+      <image:title>Cafe Spean Music Jersey - Sky Blue</image:title>
+      <image:caption>IFONG Cafe Spean Music Jersey (Sky Blue)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/mongkol-cyan-front.webp</image:loc>
+      <image:title>Mongkol Borey Jersey - Turquoise</image:title>
+      <image:caption>IFONG Mongkol Borey Jersey (Turquoise)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/vk-gold-front.webp</image:loc>
+      <image:title>The VK Music Jersey - Amber / Black</image:title>
+      <image:caption>IFONG The VK Music Jersey (Amber / Black)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cg-black-front.webp</image:loc>
+      <image:title>CG NV AMM Jersey - Charcoal</image:title>
+      <image:caption>IFONG CG NV AMM Jersey (Charcoal)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cg-cyan-front.webp</image:loc>
+      <image:title>CG NV AMM Jersey - Aqua</image:title>
+      <image:caption>IFONG CG NV AMM Jersey (Aqua)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/mongkol-black-front.webp</image:loc>
+      <image:title>Mongkol Borey Jersey - Graphite</image:title>
+      <image:caption>IFONG Mongkol Borey Jersey (Graphite)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/mongkol-pink-front.webp</image:loc>
+      <image:title>Mongkol Borey Jersey - Magenta</image:title>
+      <image:caption>IFONG Mongkol Borey Jersey (Magenta)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/vk-pink-front.webp</image:loc>
+      <image:title>The VK Music Jersey - Orchid Pink</image:title>
+      <image:caption>IFONG The VK Music Jersey (Orchid Pink)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/family-pink-front.webp</image:loc>
+      <image:title>The Family TPT Jersey - Rose</image:title>
+      <image:caption>IFONG The Family TPT Jersey (Rose)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ifong-yak.shop/images/jerseys/cafe-purple-front.webp</image:loc>
+      <image:title>Cafe Spean Music Jersey - Black / Violet</image:title>
+      <image:caption>IFONG Cafe Spean Music Jersey (Black / Violet)</image:caption>
+    </image:image>
   </url>
 </urlset>
