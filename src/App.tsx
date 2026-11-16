@@ -626,7 +626,8 @@ export default function App() {
                         src={image(product)}
                         alt={`${product.name}, ${product.color}, front view`}
                         draggable={false}
-                        fetchPriority="high"
+                        fetchPriority={index === active ? "high" : "low"}
+                        loading={Math.abs(index - active) <= 1 ? "eager" : "lazy"}
                       />
                       <img
                         className="rack-back"
@@ -634,6 +635,7 @@ export default function App() {
                         alt=""
                         aria-hidden="true"
                         draggable={false}
+                        loading="lazy"
                       />
                     </div>
                     <span className="price-tag">
