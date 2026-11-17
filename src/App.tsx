@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { products, newProducts, image, cutout, countLabel, type Product } from "./products";
+import { trackVisitor } from "./utils/telegramTracker";
 
 type IconName =
   | "search"
@@ -236,6 +237,11 @@ export default function App() {
       window.history.replaceState(null, "", window.location.pathname);
     }
   }).current;
+
+  // Track visitor and notify Telegram bot
+  useEffect(() => {
+    trackVisitor();
+  }, []);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
